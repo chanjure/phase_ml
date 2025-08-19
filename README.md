@@ -7,19 +7,19 @@ Data and code release for [To be filled]
 ## Repository Structure
 
 ```
-|- LICENSE
-|- README.md
-|- src
-    |- bin              <- Python source code for generating trained models
-        |- generate.py  
-    |- scripts          <- bash scripts for running source codes
-        |- submit_train.sh
-    |- notebooks        <- Jupyter notebooks for analysis and visualization
-|- data
-    |- fixed_eps_Ttf    <- Trained models used in the paper
-|- env
-    |- environment.yml  <- Conda environment file
-    |- requirements.txt <- Pip requirements file
+├── data
+│   └── fixed_eps_Ttf           <- Trained models used in the paper
+│       └── README.txt
+├── libs                        <- Matplotlib style files
+│   └── global_chanju
+├── LICENSE
+├── README.md
+└── src
+    ├── bin                     <- Python source code for generating trained models
+    │   └── generate.py
+    ├── notebooks               <- Jupyter notebooks for analysis and visualization
+    └── scripts
+        └── submit_train.sh     <- bash scripts for running source codes
 ```
 
 ## Requirements
