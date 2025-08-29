@@ -1,10 +1,11 @@
-% Badges here
+% Arxiv badge here
+
 [![Run tests](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml/badge.svg?event=push)](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml)
 [![codecov](https://codecov.io/gh/chanjure/phase_ml/graph/badge.svg?token=D4Q9HTV7SW)](https://codecov.io/gh/chanjure/phase_ml)
 
 # Phase diagram and eigenvalue dynamics of stochastic gradient descent in multilayer neural networks
 
-Data and code release for [To be filled]
+Data and code release for [arxiv number]
 
 ## Repository Structure
 
@@ -64,23 +65,23 @@ For pip users, you can install the required packages with the following command:
 
 ### Reproducing the plots
 
-The plots in the article can be reproduced by Jupyter notebooks in ```src/notebooks```.
+The plots in the article can be reproduced by the jupyter notebook in ```src/notebooks```.
 
 ### Regenerating the trained models
 
 The models saved in ```data/fixed_eps_Ttf``` are generated from the training script in ```src/scripts/submit_train.sh```.
 
-Run from ```src/scripts``` directory:
+Run:
 
-```bash bash submit_train.sh```
+```bash ./src/scripts/submit_train.sh```
 
-To regenerate trained models.
+to regenerate trained models.
 
 ## Output
 
-Output plots are placed in the ```assets/plots``` directory.
+Output plots from the jupyter notebook are placed in the ```data_assets/figures``` directory.
 
-Output data assets are placed into the ```data_assets``` directory.
+Generated trained models are placed into the ```data_assets/models``` directory.
 
 ## Reusability
 
