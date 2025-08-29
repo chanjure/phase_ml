@@ -1,12 +1,10 @@
 #!/bin/bash --login
 
 PROJECT_NAME=fixed_eps_Ttf
-SCRIPTDIR="../scripts"
-BINDIR="../bin"
-LOGDIR="../../data_assets/logs"
-MODELDIR="../../data_assets/models/"
-
-echo ${LOGDIR}
+SCRIPTDIR="./src/scripts"
+BINDIR="./src/bin"
+LOGDIR="./data_assets/logs"
+MODELDIR="./data_assets/models/"
 
 ACTF=tanh
 R=2
@@ -25,6 +23,9 @@ EPOCHS=10
 
 mkdir -p ${LOGDIR}
 
+INPUT_PARAMS="n_seed = ${NSEED} \n r = ${R} \n K = ${K} \n bs = ${BS} \n epochs = ${EPOCHS} \n actf = ${ACTF}"
+
+echo ${INPUT_PARAMS} > ${MODELDIR}/${PROJECT_NAME}/
 # LR, BS
 # Test 25 tasks
 #declare -a LRS=( 1000.0 100.0 10.0 1.0 0.1 )
