@@ -33,7 +33,7 @@ def test_low_T():
         assert os.path.exists("./data_assets/models")
 
 def test_high_T():
-    with mock.patch('sys.argv', ["main", "--actf", "tanh", "--n_seed", "2", "--epochs", "100", "--model_dir", "./data_assets/models", "--r", "2", "--K", "16", "--M_mu", "0", "--M_sig", "1", "--W_mu", "0", "--W_sig", "1", "--Z_mu", "0", "--Z_sig", "1", "--bs", "4", "--lr", "1000", "--Wp_sig", "0.1", "--project", "test"]):
+    with mock.patch('sys.argv', ["main", "--actf", "tanh", "--n_seed", "2", "--epochs", "100", "--model_dir", "./data_assets/models", "--r", "2", "--K", "16", "--M_mu", "0", "--M_sig", "1", "--W_mu", "0", "--W_sig", "1", "--Z_mu", "0", "--Z_sig", "1", "--bs", "4", "--lr", "1000000", "--Wp_sig", "0.1", "--project", "test"]):
         parser = argparse.ArgumentParser()
         parser.add_argument('--actf', type=str, default='tanh')
         parser.add_argument('--n_seed', type=int, default=2)
