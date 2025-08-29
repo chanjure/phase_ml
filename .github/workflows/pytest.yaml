@@ -27,6 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install pytest pytest-cov codecov nbstripout
         python -m pip install -r ./env/requirements.txt
+        python -m pip install nbconvert
     - name: Check nbconvert and pytest
       run: |
         jupyter nbconvert --to notebook --execute src/notebooks/empirical_phase.ipynb
