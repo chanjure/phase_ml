@@ -1,6 +1,6 @@
 % Badges here
 [![Run tests](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml/badge.svg?event=push)](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml)
-[![codecov](https://codecov.io/github/chanjure/phase_ml/graph/badge.svg?token=WNARB26ICQ)](https://codecov.io/github/chanjure/phase_ml)
+[![codecov](https://codecov.io/gh/chanjure/phase_ml/graph/badge.svg?token=D4Q9HTV7SW)](https://codecov.io/gh/chanjure/phase_ml)
 
 # Phase diagram and eigenvalue dynamics of stochastic gradient descent in multilayer neural networks
 
