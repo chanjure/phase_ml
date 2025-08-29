@@ -27,10 +27,10 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install pytest pytest-cov codecov nbstripout
         python -m pip install -r ./env/requirements.txt
-        python -m pip install nbconvert
-    - name: Check nbconvert and pytest
+        python -m pip install nbconvert nbstripout
+    - name: Check pytest
       run: |
-        python -m pytest -v --cov-config=.coveragerc --cov=./ test/
+        bash test/run_tests.sh
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v4.0.1
       with:
