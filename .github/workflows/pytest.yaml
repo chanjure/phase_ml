@@ -30,7 +30,7 @@ jobs:
         python -m pip install nbconvert nbstripout
     - name: Check pytest
       run: |
-        bash test/run_tests.sh
+        bash test/run_check.sh
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v4.0.1
       with:
