@@ -7,19 +7,23 @@ Data and code release for [To be filled]
 ## Repository Structure
 
 ```
-├── data
-│   └── fixed_eps_Ttf           <- Trained models used in the paper
-│       └── README.txt
-├── libs                        <- Matplotlib style files
-│   └── global_chanju
+.
+├── data                            <- Trained models used in the paper
+├── data_assets                     <- Directory for output of the workflow
+│   ├── figures
+│   ├── logs
+│   └── models
+├── env                             <- Environment files
+├── libs                            <- Submodules including figure styles
 ├── LICENSE
 ├── README.md
 └── src
-    ├── bin                     <- Python source code for generating trained models
-    │   └── generate.py
-    ├── notebooks               <- Jupyter notebooks for analysis and visualization
-    └── scripts
-        └── submit_train.sh     <- bash scripts for running source codes
+    ├── bin                         <- Python source code for generating trained models
+    │   └── generate.py             
+    ├── notebooks                   <- Jupyter notebooks for reproducing the figures in the paper
+    │   └── empirical_phase.ipynb
+    └── scripts                     <- Scripts for running the workflow
+        └── submit_train.sh
 ```
 
 ## Requirements
