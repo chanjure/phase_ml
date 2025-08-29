@@ -29,7 +29,11 @@ jobs:
         python -m pip install -r ./env/requirements.txt
     - name: Check nbconvert and pytest
       run: |
-        bash .github/workflow/run_check.sh
+        jupyter nbconvert --to notebook --execute src/notebooks/empirical_phase.ipynb
+        mv scripts/SRBM-scaling_analysis.nbconvert.ipynb src/notebooks/empirical_phase.ipynb
+        nbstripout src/notebook/empirical_phase.ipynb
+        
+        python -m pytest -v --cov-config=.coveragerc --cov=./ test/
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v4.0.1
       with:
