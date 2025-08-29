@@ -77,6 +77,8 @@ Run:
 
 to regenerate trained models.
 
+Hyperparameters such as learning rate, batch size, number of nodes, etc. can be modified in the script.
+
 ## Output
 
 Output plots from the jupyter notebook are placed in the ```data_assets/figures``` directory.
