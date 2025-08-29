@@ -51,15 +51,21 @@ cd phase_ml
 
 For conda users, you can create a new environment with the following command:
 
-```conda env create -f env/environment.yml -n qftml```
+```
+conda env create -f env/environment.yml -n qftml
+```
 
 Then, activate the environment:
 
-```conda activate qftml```
+```
+conda activate qftml
+```
 
 For pip users, you can install the required packages with the following command:
 
-```python -m pip install -r env/requirements.txt```
+```
+python -m pip install -r env/requirements.txt
+```
 
 ## Running the workflow
 
@@ -73,11 +79,13 @@ The models saved in ```data/fixed_eps_Ttf``` are generated from the training scr
 
 Run:
 
-```bash ./src/scripts/submit_train.sh```
+```
+bash ./src/scripts/submit_train.sh
+```
 
 to regenerate trained models.
 
-Hyperparameters such as learning rate, batch size, number of nodes, etc. can be modified in the script.
+Hyperparameters such as learning rate, batch size, number of nodes, etc. can be modified from the script.
 
 ## Output
 
