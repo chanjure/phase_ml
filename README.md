@@ -3,7 +3,7 @@
 [![Run tests](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml/badge.svg?event=push)](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml)
 [![codecov](https://codecov.io/gh/chanjure/phase_ml/graph/badge.svg?token=D4Q9HTV7SW)](https://codecov.io/gh/chanjure/phase_ml)
 
-# Phase diagram and eigenvalue dynamics of stochastic gradient descent in multilayer neural networks
+# Phase diagram and eigenvalue dynamics of stochastic gradient descent in multilayer neural networks - analysis workflow
 
 Data and code release for [arxiv number]
 
@@ -95,6 +95,6 @@ Generated trained models are placed into the ```data_assets/models``` directory.
 
 ## Reusability
 
-This workflow is relatively tailored to the data which it was originally written to analyse.
-Additional data may be added to the analysis by adding relevant files to the ```data``` directory.
-However, extending the analysis in this way has not been as fully tested as the rest of the workflow, and is not guaranteed to be trivial for someone not already familiar with the code.
+The original data used in the paper will be hosted on Zenodo and linked here.
+
+To reproduce the original figures, download the data and place it in the ```data/``` directory.
