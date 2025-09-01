@@ -97,4 +97,9 @@ Generated trained models are placed into the ```data_assets/models``` directory.
 
 The original data used in the paper will be hosted on Zenodo and linked here.
 
-To reproduce the original figures, download the data and place it in the ```data/``` directory.
+To reproduce the original figures, download ```fixed_eps_Ttf.tar.gz``` from Zenodo, then place it in the ```data/``` directory.
+
+```
+mv fixed_eps_Ttf.tar.gz data/
+tar -xvzf fixed_eps_Ttf.tar.gz
+```
