@@ -73,6 +73,8 @@ python -m pip install -r env/requirements.txt
 
 The plots in the article can be reproduced by the jupyter notebook in ```src/notebooks```.
 
+The dataset should be downloaded and placed in the ```data/``` directory as described in the Reproducibility section below.
+
 ### Regenerating the trained models
 
 The models saved in ```data/fixed_eps_Ttf``` are generated from the training script in ```src/scripts/submit_train.sh```.
