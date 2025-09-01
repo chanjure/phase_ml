@@ -93,7 +93,7 @@ Output plots from the jupyter notebook are placed in the ```data_assets/figures`
 
 Generated trained models are placed into the ```data_assets/models``` directory.
 
-## Reusability
+## Reproducibility
 
 The original data used in the paper will be hosted on Zenodo and linked here.
 
