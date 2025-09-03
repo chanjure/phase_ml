@@ -1,7 +1,5 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2509.01349-b31b1b.svg)](https://arxiv.org/abs/2509.01349)
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17046571.svg)](https://doi.org/10.5281/zenodo.17046571)
-
 [![Run tests](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml/badge.svg?event=push)](https://github.com/chanjure/phase_ml/actions/workflows/pytest.yaml)
 [![codecov](https://codecov.io/gh/chanjure/phase_ml/graph/badge.svg?token=D4Q9HTV7SW)](https://codecov.io/gh/chanjure/phase_ml)
 
