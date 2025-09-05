@@ -16,26 +16,29 @@ W_sig=1
 Z_mu=0
 Z_sig=1
 BS=4
+
+# Original parameters
 # NSEED=10
 # EPOCHS=100000
+
+# For testing
 NSEED=2
 EPOCHS=10
 
 mkdir -p ${LOGDIR}
+mkdir -p ${MODELDIR}/${PROJECT_NAME}/
 
 INPUT_PARAMS="n_seed = ${NSEED} \n r = ${R} \n K = ${K} \n bs = ${BS} \n epochs = ${EPOCHS} \n actf = ${ACTF}"
 
-echo ${INPUT_PARAMS} > ${MODELDIR}/${PROJECT_NAME}/
-# LR, BS
-# Test 25 tasks
-#declare -a LRS=( 1000.0 100.0 10.0 1.0 0.1 )
-#declare -a EPSS=( 1000.0 100.0 10.0 1.0 0.1 )
+echo ${INPUT_PARAMS} > ${MODELDIR}/${PROJECT_NAME}/README.txt
 
+# LR, BS
+# Original parameters
 # 144 tasks
 #declare -a LRS=( 256.0 128.0 64.0 32.0 16.0 8.0 4.0 2.0 1.0 0.5 0.25 0.125 )
 #declare -a EPSS=( 256.0 128.0 64.0 32.0 16.0 8.0 4.0 2.0 1.0 0.5 0.25 0.125 )
 
-# Test
+# For testing
 declare -a LRS=( 1.0 2.0 )
 declare -a EPSS=( 1.0 2.0 )
 
